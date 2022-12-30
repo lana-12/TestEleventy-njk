@@ -1,0 +1,50 @@
+{% block footer%}
+<footer class="container">
+    <section class=" row footer__contact container  ">
+        <div class="contact__url__tel col-12 col-sm-5 col-lg-3">
+            <h4 class="">Contactez-moi <em>!</em> </h4>
+            <p>
+                <a href="#" title="Lien URL vers page Contact - Cliquez pour accéder au formulaire">
+                    <adress>photographe-cc.netlify.app/contact.html<adress>
+                </a>
+            </p>
+            <p>
+                <a href="{{contact.phone}}" title="Contact téléphonique - Cliquez pour appeler" title="Contact téléphonique - Cliquez pour appeler">{{contact.phone}}</a>
+            </p>
+    
+        </div>
+        <div class="col-12 col-sm-5 col-lg-3">
+            <img class="logo img-fluid rounded " src="./img/logo.png" srcset="" alt="Logo Virginie Giacometti" title="Logo Virginie Giacometti">
+        </div>
+    
+        <div class="col-12 col-sm-5 col-lg-3">
+            
+            <div class="">
+                <a href="{{contact.linkedin}}" target="_blank" title="Lien vers mon Linkedin" alt="Lien vers mon Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+    
+        </div>
+        <div class="col-12 col-sm-5 col-lg-3  ">
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/presentation/">Présentation</a></li>
+                <li><a href="/realisation/">Réalisations</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+        
+    </section>
+<hr class="separator__footer">
+    <section class="copyright">
+        <div class="row">
+            <div class="col-12 ">
+                <p class="text-center copyright">Copyright @ 2023 All rights reserved by :
+                    <a href="mailto:giacomettivirginie@gmail.com" title="Cliquez pour m'envoyer un email" alt="Cliquez pour m'envoyer un email">
+                        <strong>{{site.firstname}} {{site.lastname}}</strong>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+</footer>
+{% endblock footer%}
